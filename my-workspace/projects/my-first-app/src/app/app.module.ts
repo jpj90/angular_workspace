@@ -4,13 +4,18 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { MyLibModule } from 'my-lib';
+import { RegularComponentComponent } from './components/regular-component/regular-component.component'
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RegularComponentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MyLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
